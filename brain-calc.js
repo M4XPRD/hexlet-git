@@ -1,7 +1,5 @@
 import gameEngine from '../index.js';
 
-const gameRule = 'What is the result of the expression?';
-
 const mathOperations = (num1, num2, operators) => {
   let result = '';
   switch (operators) {
@@ -33,6 +31,7 @@ const gameQuestion = () => {
 const gameAnswer = () => {
     const gameAnswer = String(mathOperations(randNumOne, randNumTwo, mathOperators[randOperator]));
 }
+const gameRule = 'What is the result of the expression?';
 
 const brainCalc = () => gameEngine(gameRule, gameSettings);
 
